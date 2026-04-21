@@ -1,196 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="Eurofound1.png">
   <meta charset="UTF-8" />
-  <title>SEES Digitalisation Eurofound</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- CSS correcto -->
-  <link rel="stylesheet" href="style.css">
+  <title>Eurofound Survey Portal</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- TOP BAR -->
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <div class="brand">
-        <img src="eurofound-logo.png" alt="Eurofound logo" class="brand-logo">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <div class="brand-mark" aria-hidden="true">EUROFOUND</div>
         <div>
-          <div class="brand-title">SEES Digitalisation</div>
-          <div class="brand-subtitle">Eurofound</div>
+          <p class="eyebrow">Survey Portal</p>
+          <h1>Access the questionnaire in your language</h1>
         </div>
       </div>
-
-      <nav class="topbar-actions">
-        <a href="#languages" class="toplink">Questionnaires</a>
-      </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-content">
-      <h1>SEES digitalisation Eurofound</h1>
-      <p class="hero-lead">
-        Access the survey questionnaire in your preferred official EU language.
+  <section class="hero-banner">
+    <div class="container">
+      <p class="hero-text">
+        Please select your preferred language to continue to the relevant survey access page.
       </p>
-
-      <div class="hero-card">
-        <input
-          id="langSearch"
-          class="search"
-          type="text"
-          placeholder="Search language (e.g. Spanish, Deutsch, Français)"
-        />
-
-        <div class="chips" id="chips">
-          <button class="chip active" data-filter="all">All</button>
-          <button class="chip" data-filter="common">Most common</button>
-          <button class="chip" data-filter="available">Available</button>
-          <button class="chip" data-filter="coming">Coming soon</button>
-        </div>
-
-        <div class="meta">
-          <span id="countLabel">24 languages</span>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- LANGUAGES -->
-  <main class="container">
-<section id="languages" class="section questionnaires-panel">
-  <h2>Questionnaires by language</h2>
-  <p class="muted">
-    Select a language to open the questionnaire in a new tab.
-  </p>
+  <main id="main-content" class="container main-content">
+    <section class="intro-section" aria-labelledby="portal-intro">
+      <h2 id="portal-intro">About this portal</h2>
+      <p>
+        This portal provides access points to language-specific survey pages. After selecting a language,
+        you will be taken to an intermediate page containing a short introduction and the final survey link.
+      </p>
+    </section>
 
-  <div id="languagesGrid" class="grid"></div>
+    <section class="language-section" aria-labelledby="language-selection">
+      <div class="section-heading">
+        <h2 id="language-selection">Select language</h2>
+        <p class="section-subtext">Official languages of the European Union</p>
+      </div>
 
-<p class="note">
-  <strong>Note:</strong> Languages marked as “Coming soon” will be activated once the link is available.
-</p>
-</section>
-
+      <div class="language-grid">
+        <a class="language-card" href="language.html?lang=bg" lang="bg">Български</a>
+        <a class="language-card" href="language.html?lang=hr" lang="hr">Hrvatski</a>
+        <a class="language-card" href="language.html?lang=cs" lang="cs">Čeština</a>
+        <a class="language-card" href="language.html?lang=da" lang="da">Dansk</a>
+        <a class="language-card" href="language.html?lang=nl" lang="nl">Nederlands</a>
+        <a class="language-card" href="language.html?lang=en" lang="en">English</a>
+        <a class="language-card" href="language.html?lang=et" lang="et">Eesti</a>
+        <a class="language-card" href="language.html?lang=fi" lang="fi">Suomi</a>
+        <a class="language-card" href="language.html?lang=fr" lang="fr">Français</a>
+        <a class="language-card" href="language.html?lang=de" lang="de">Deutsch</a>
+        <a class="language-card" href="language.html?lang=el" lang="el">Ελληνικά</a>
+        <a class="language-card" href="language.html?lang=hu" lang="hu">Magyar</a>
+        <a class="language-card" href="language.html?lang=ga" lang="ga">Gaeilge</a>
+        <a class="language-card" href="language.html?lang=it" lang="it">Italiano</a>
+        <a class="language-card" href="language.html?lang=lv" lang="lv">Latviešu</a>
+        <a class="language-card" href="language.html?lang=lt" lang="lt">Lietuvių</a>
+        <a class="language-card" href="language.html?lang=mt" lang="mt">Malti</a>
+        <a class="language-card" href="language.html?lang=pl" lang="pl">Polski</a>
+        <a class="language-card" href="language.html?lang=pt" lang="pt">Português</a>
+        <a class="language-card" href="language.html?lang=ro" lang="ro">Română</a>
+        <a class="language-card" href="language.html?lang=sk" lang="sk">Slovenčina</a>
+        <a class="language-card" href="language.html?lang=sl" lang="sl">Slovenščina</a>
+        <a class="language-card" href="language.html?lang=es" lang="es">Español</a>
+        <a class="language-card" href="language.html?lang=sv" lang="sv">Svenska</a>
+      </div>
+    </section>
   </main>
 
-  <!-- FOOTER -->
- <footer class="footer">
-  <div class="container footer-inner">
-    <span>© Eurofound</span>
-    <span class="dot">•</span>
-    <span>
-      For any questions regarding this survey, please contact
-      <a href="mailto:XXXX@eurofound.europa.eu" class="footer-link">
-        XXXX@eurofound.europa.eu
-      </a>
-    </span>
-  </div>
-</footer>
-
-  <!-- SCRIPT -->
-  <script>
-
-    function flagEmoji(countryCode) {
-  return countryCode
-    .toUpperCase()
-    .replace(/./g, char =>
-      String.fromCodePoint(127397 + char.charCodeAt())
-    );
-}
-    const LANGUAGES = [
-      { code: "en", label: "English", common: true, url: "" },
-      { code: "fr", label: "Français (French)", common: true, url: "" },
-      { code: "de", label: "Deutsch (German)", common: true, url: "" },
-      { code: "es", label: "Español (Spanish)", common: true, url: "" },
-      { code: "it", label: "Italiano (Italian)", common: true, url: "" },
-
-      { code: "bg", label: "Български (Bulgarian)", common: false, url: "" },
-      { code: "hr", label: "Hrvatski (Croatian)", common: false, url: "" },
-      { code: "cs", label: "Čeština (Czech)", common: false, url: "" },
-      { code: "da", label: "Dansk (Danish)", common: false, url: "" },
-      { code: "nl", label: "Nederlands (Dutch)", common: false, url: "" },
-      { code: "et", label: "Eesti (Estonian)", common: false, url: "" },
-      { code: "fi", label: "Suomi (Finnish)", common: false, url: "" },
-      { code: "el", label: "Ελληνικά (Greek)", common: false, url: "" },
-      { code: "hu", label: "Magyar (Hungarian)", common: false, url: "" },
-      { code: "ga", label: "Gaeilge (Irish)", common: false, url: "" },
-      { code: "lv", label: "Latviešu (Latvian)", common: false, url: "" },
-      { code: "lt", label: "Lietuvių (Lithuanian)", common: false, url: "" },
-      { code: "mt", label: "Malti (Maltese)", common: false, url: "" },
-      { code: "pl", label: "Polski (Polish)", common: false, url: "" },
-      { code: "pt", label: "Português (Portuguese)", common: false, url: "" },
-      { code: "ro", label: "Română (Romanian)", common: false, url: "" },
-      { code: "sk", label: "Slovenčina (Slovak)", common: false, url: "" },
-      { code: "sl", label: "Slovenščina (Slovenian)", common: false, url: "" },
-      { code: "sv", label: "Svenska (Swedish)", common: false, url: "" }
-    ];
-
-    const grid = document.getElementById("languagesGrid");
-    const search = document.getElementById("langSearch");
-    const chips = document.getElementById("chips");
-    const countLabel = document.getElementById("countLabel");
-
-    let activeFilter = "all";
-    let query = "";
-
-    function render() {
-      grid.innerHTML = "";
-
-      const filtered = LANGUAGES.filter(l => {
-        const q = query.toLowerCase();
-        const hasUrl = !!l.url;
-
-        return (
-          (!q || l.label.toLowerCase().includes(q) || l.code.includes(q)) &&
-          (
-            activeFilter === "all" ||
-            (activeFilter === "common" && l.common) ||
-            (activeFilter === "available" && hasUrl) ||
-            (activeFilter === "coming" && !hasUrl)
-          )
-        );
-      });
-
-      countLabel.textContent = `${filtered.length} languages`;
-
-      filtered.forEach(l => {
-        const a = document.createElement("a");
-        a.className = "card" + (l.url ? "" : " disabled");
-        a.href = l.url || "#";
-        if (l.url) a.target = "_blank";
-
-        a.innerHTML = `
-          <div>
-            <div class="badge">${l.code.toUpperCase()}</div>
-            <div class="title">${l.label}</div>
-          </div>
-          <div class="status ${l.url ? "ready" : "soon"}">
-            ${l.url ? "Open" : "Coming soon"}
-          </div>
-        `;
-
-        grid.appendChild(a);
-      });
-    }
-
-    search.addEventListener("input", e => {
-      query = e.target.value;
-      render();
-    });
-
-    chips.addEventListener("click", e => {
-      if (!e.target.dataset.filter) return;
-      activeFilter = e.target.dataset.filter;
-      document.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
-      e.target.classList.add("active");
-      render();
-    });
-
-    render();
-  </script>
-
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Eurofound – Survey Portal</p>
+    </div>
+  </footer>
 </body>
 </html>
