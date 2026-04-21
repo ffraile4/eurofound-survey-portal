@@ -1,0 +1,250 @@
+:root {
+  --color-primary: #004b87;
+  --color-primary-dark: #00365f;
+  --color-accent: #f3f6f9;
+  --color-border: #d7dee5;
+  --color-text: #1f2a33;
+  --color-text-soft: #51606d;
+  --color-white: #ffffff;
+  --color-focus: #ffbf47;
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --radius: 12px;
+  --max-width: 1200px;
+  --max-width-narrow: 760px;
+  --transition: 0.2s ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-white);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus,
+button:focus {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 999;
+  background: var(--color-focus);
+  color: #000000;
+  padding: 0.75rem 1rem;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+.container {
+  width: min(100% - 2rem, var(--max-width));
+  margin: 0 auto;
+}
+
+.container.narrow {
+  width: min(100% - 2rem, var(--max-width-narrow));
+}
+
+.site-header {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-white);
+  padding: 3rem 0;
+}
+
+.subpage-header {
+  padding: 2.5rem 0;
+}
+
+.brand-block .eyebrow {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.brand-block h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+}
+
+.brand-block .lead {
+  margin: 1rem 0 0 0;
+  max-width: 760px;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.site-main {
+  padding: 2.5rem 0 4rem;
+}
+
+.intro-section,
+.language-detail-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.75rem;
+  color: var(--color-text);
+}
+
+.section-text {
+  margin: 0;
+  color: var(--color-text-soft);
+  max-width: 720px;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.language-card {
+  display: block;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+  min-height: 120px;
+}
+
+.language-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+  text-decoration: none;
+}
+
+.language-card:focus {
+  text-decoration: none;
+}
+
+.language-card .language-native {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.35rem;
+}
+
+.language-card .language-english {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--color-text-soft);
+}
+
+.breadcrumb {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--color-text-soft);
+}
+
+.breadcrumb a {
+  color: var(--color-primary);
+}
+
+.language-panel {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.language-panel h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.language-panel p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-soft);
+  font-size: 1.05rem;
+}
+
+.primary-button {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.85rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background-color var(--transition);
+}
+
+.primary-button:hover {
+  background-color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.primary-button:visited {
+  color: var(--color-white);
+}
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 1.25rem 0;
+  color: var(--color-text-soft);
+  background-color: #fafbfd;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.error-message {
+  background: #fff4f4;
+  border: 1px solid #e7b9b9;
+  color: #7a1f1f;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    padding: 2.25rem 0;
+  }
+
+  .language-panel {
+    padding: 1.5rem;
+  }
+}

@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Survey Access | Eurofound</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Language Page | Eurofound</title>
+  <meta name="description" content="Eurofound Survey Portal language introduction page.">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
+  <header class="site-header subpage-header">
+    <div class="container">
       <div class="brand-block">
-        <div class="brand-mark" aria-hidden="true">EUROFOUND</div>
-        <div>
-          <p class="eyebrow">Survey Portal</p>
-          <h1 id="page-title">Survey language page</h1>
-        </div>
+        <p class="eyebrow">Eurofound</p>
+        <h1 id="language-page-title">Survey Portal</h1>
+        <p class="lead" id="language-page-subtitle">Language introduction page.</p>
       </div>
     </div>
   </header>
 
-  <main id="main-content" class="container language-page">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="index.html">Home</a>
-      <span aria-hidden="true">/</span>
-      <span id="breadcrumb-language">Language</span>
-    </nav>
+  <main id="main-content" class="site-main">
+    <section class="language-detail-section">
+      <div class="container narrow">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span id="breadcrumb-language">Language</span>
+        </nav>
 
-    <section class="language-panel" aria-labelledby="language-heading">
-      <h2 id="language-heading">Language access</h2>
-      <p id="language-intro">
-        You are about to access the questionnaire in English.
-      </p>
+        <div class="language-panel">
+          <h2 id="language-name-heading">Language</h2>
+          <p id="language-intro-text">
+            You are about to access the questionnaire in this language.
+          </p>
 
-      <a id="survey-link" class="primary-button" href="#" target="_blank" rel="noopener noreferrer">
-        Access questionnaire
-      </a>
+          <a
+            id="questionnaire-link"
+            class="primary-button"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Access questionnaire
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© Eurofound – Survey Portal</p>
+      <p>Eurofound Survey Portal</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="assets/js/languages.js"></script>
+  <script src="assets/js/language-page.js"></script>
 </body>
 </html>
